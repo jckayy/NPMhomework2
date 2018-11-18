@@ -1,0 +1,35 @@
+{
+  "name": "yygthomeorknpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/.bin/webpack --development",
+    "start": "npm run webpack --config webpack.config.js && node index.js",
+    "printinfo": "echo %npm_package_description%",
+    "clean": "rm -r node_modules",
+    "build": "npm i",
+    "startnode": "node index.js",
+    "watch": "nodemon index.js",
+    "audit": "npm audit",
+    "alwaysrun": "npm audit %% node index.js",
+    "prod": "npm run clean && npm run build",
+    "node 4": "npx node@4 index.js",
+    "node 6": "npx node@6 index.js",
+    "node 8": "npx node@8 index.js"
+  },
+  "keywords": [],
+  "author": "YY",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "querystring-browser": "^1.0.4",
+    "weather-js": "^2.0.0"
+  }
+}
